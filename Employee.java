@@ -8,6 +8,8 @@ public class Employee {
 	private Date dateOfBirth;
 	private double salary;
 	private int age;
+
+	String description = "This is the changed line in branch emp-changes";
 	
 	public Employee(String name, String email, Date dateOfBirth, int age, double salary) {
 		this.name = name;
