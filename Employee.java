@@ -7,13 +7,11 @@ public class Employee {
 	private String email;
 	private Date dateOfBirth;
 	private double salary;
-	private int age;
 
-	String description = "This is the changed line in branch emp-changes";
+	String description = "Removed age field which was not necessary";
 	
-	public Employee(String name, String email, Date dateOfBirth, int age, double salary) {
+	public Employee(String name, String email, Date dateOfBirth, double salary) {
 		this.name = name;
-		this.age = age;
 		this.email = email;
 		this.dateOfBirth = dateOfBirth;
 		this.salary = salary;
@@ -24,13 +22,6 @@ public class Employee {
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
 	}
 
 	public String getEmail() {
